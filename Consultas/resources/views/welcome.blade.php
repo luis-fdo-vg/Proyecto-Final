@@ -11,6 +11,7 @@
         <title>Consumibles Red</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="assets/css/main.css" />
         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -18,7 +19,7 @@
     </head>
     <body>
        <div align="center">@yield("mapagoogle")</div> 
-
+       <div align="center">@yield("registrar")</div> 
         <!-- Sidebar -->
             <div id="sidebar">
 
@@ -33,14 +34,14 @@
                             <li><a href="#">Productos</a></li>
                             <li><a href="Ubicacion">Ubicacion</a></li>
                             <li><a href="#">Contacto</a></li>
-                            <li><a href="#">Publicaciones</a></li>
+                            <li><a href="Registro">Registrar</a></li>
                         </ul>
                     </nav>
 
                 <!-- Search -->
                     <section class="box search">
                         <form method="post" action="#">
-                            <input type="text" class="text" name="search" placeholder="Search" />
+                            <input type="text" class="text" name="search" placeholder="Buscar" />
                         </form>
                     </section>
 

@@ -19,3 +19,9 @@ Route::get('Ubicacion', function ()
 {
     return view('vistaUbicacion');
 });
+Route::get('Registro', function () 
+{
+
+    return view('registracion');
+});
+
