@@ -24,4 +24,9 @@ Route::get('Registro', function ()
 
     return view('registracion');
 });
+Route::get('contacto', function () 
+{
+
+    return view('contactos');
+});
 

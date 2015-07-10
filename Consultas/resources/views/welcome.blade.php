@@ -12,61 +12,50 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="http://maps.googleapis.com/maps/api/js"></script>
-        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="assets/css/main.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 
     </head>
     <body>
        <div align="center">@yield("mapagoogle")</div> 
-       <div align="center">@yield("registrar")</div> 
+       <div align="center">@yield("registrar")</div>
+       <div align="center">@yield("contactar")</div>
+
         <!-- Sidebar -->
             <div id="sidebar">
 
                 <!-- Logo -->
-                    <h1><a href="#"><img src="logo.jpg"></img></a></h1>
+                    <h1><a href="Inicio"><img src="logo.jpg"></img></a></h1>
 
-                <!-- Nav -->
+                <!-- Nav Barra -->
                     <nav id="nav">
                         <ul>
                             <li><a href="Inicio">Inicio</a></li>
-                            <li><a href="#">Catalogo</a></li>
-                            <li><a href="#">Productos</a></li>
+                            <li><a href="catalogo">Catalogo</a></li>
+                            <li><a href="productos">Productos</a></li>
                             <li><a href="Ubicacion">Ubicacion</a></li>
-                            <li><a href="#">Contacto</a></li>
+                            <li><a href="contacto">Contacto</a></li>
                             <li><a href="Registro">Registrar</a></li>
                         </ul>
                     </nav>
-
-                <!-- Search -->
                     <section class="box search">
                         <form method="post" action="#">
                             <input type="text" class="text" name="search" placeholder="Buscar" />
                         </form>
                     </section>
 
-                    <section class="box text-style1">
-                        <form action="?login=1" method="post">
-                        Usuario: <input type="text" name="username" border="10px solid black" border-color:"black";/>
-                        Contraseña: <input type="password" name="password" />
-                        <input type="submit" />
-                        </form>
-                    </section>
-
-
-
-                <!-- Copyright -->
                     <ul id="copyright">
-                        <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        <li>&copy; Alumnos Tec.</li>
                     </ul>
 
             </div>
 
-        <!-- Scripts -->
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/skel.min.js"></script>
             <script src="assets/js/util.js"></script>
-            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
             <script src="assets/js/main.js"></script>
 
     </body>
