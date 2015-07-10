@@ -1672,8 +1672,9 @@
 	form label {
 		font-family: 'Open Sans Condensed', sans-serif;
 		font-weight: 700;
-		color: #232323;
+		color: #4982E6;
 		margin: 0 0 0.75em 0;
+		border: 10px solid black;
 
 	}
 
@@ -1685,7 +1686,9 @@
 		display: block;
 		border-radius: 0.4em;
 		-webkit-appearance: none;
-		border: solid 10px #fff;
+		-webkit-box-shadow: 1px 1px 1px 1px #4982E6;
+		-webkit-border-radius: 4px;
+		border: solid 10px #4982E6;
 		padding: 0.5em 0.75em;
 		width: 100%;
 		line-height: 1.25em;
@@ -1696,7 +1699,7 @@
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			box-shadow: 0px 0px 2px 2px #c94663;
+			box-shadow: 1px 1px 1px 2px #4982E6;
 		}
 
 	form ::-webkit-input-placeholder {
@@ -1784,8 +1787,7 @@
 	button,
 	.button {
 		cursor: pointer;
-		background-color: #c94663;
-		background-image: url("images/bg01.png");
+		background-color: #D95673;
 		border-radius: 0.4em;
 		text-align: center;
 		box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
@@ -1818,7 +1820,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #d95673;
+			background-color: #4982E6
 		}
 
 		input[type="button"]:active,
@@ -2069,6 +2071,7 @@
 
 	.box.text-style1 .inner {
 		position: relative;
+
 		background-color: #272E39;
 		background-color: rgba(0, 0, 0, 0.15);
 		border-radius: 0.4em;
@@ -2335,7 +2338,7 @@
 		/* Button */
 
 			input[type="button"],
-			input[type="submit"],
+			input[type="submit"]
 			input[type="reset"],
 			.button,
 			button {

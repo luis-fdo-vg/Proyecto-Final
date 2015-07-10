@@ -11,20 +11,26 @@
 |
 */
 
-Route::get('Inicio', function () 
+Route::get('/', function () 
 {
     return view('welcome');
 });
-Route::get('Ubicacion', function () 
+
+Route::get('proyecto-final/consultas/public/Inicio', function () 
+{
+    return view('welcome');
+});
+
+Route::get('proyecto-final/consultas/public/Ubicacion', function () 
 {
     return view('vistaUbicacion');
 });
-Route::get('Registro', function () 
+Route::get('proyecto-final/consultas/public/Registro', function () 
 {
 
     return view('registracion');
 });
-Route::get('contacto', function () 
+Route::get('proyecto-final/consultas/public/contacto', function () 
 {
 
     return view('contactos');

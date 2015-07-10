@@ -34,11 +34,11 @@
                     <nav id="nav">
                         <ul>
                             <li><a href="Inicio">Inicio</a></li>
-                            <li><a href="catalogo">Catalogo</a></li>
+                            
                             <li><a href="productos">Productos</a></li>
                             <li><a href="Ubicacion">Ubicacion</a></li>
-                            <li><a href="contacto">Contacto</a></li>
-                            <li><a href="Registro">Registrar</a></li>
+                            <li><a href="#">Publicaciones</a></li>
+                           
                         </ul>
                     </nav>
                     <section class="box search">
@@ -46,6 +46,36 @@
                             <input type="text" class="text" name="search" placeholder="Buscar" />
                         </form>
                     </section>
+
+                     <section class="box text-style1">
+                        <a href="Registro">Registrarse</a>
+                        <form action="?login=1" method="post">
+                        Usuario: <input type="text" name="username" border="10px solid black" border-color:"black";/>
+                        Contraseña: <input type="password" name="password" />
+                        <center>
+                            <br>
+                                <input type="submit" value="Acceder"/>
+                        </center>
+                            </br>
+
+                        </form>
+                    </section>
+
+                    <section class="box text-style1">
+                        <div class="inner">
+                            <p>
+                                <strong>CONTACTO@</strong> <br/>   
+                                tel: 7-89-65-45<br/>
+                                cel: 71-69-58-47<br/>
+                                e-mail: edgarjoto@p.com<br/>
+
+                            </p>    
+                    </section>   
+
+
+
+                   
+
 
                     <ul id="copyright">
                         <li>&copy; Alumnos Tec.</li>
