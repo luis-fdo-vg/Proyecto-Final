@@ -26,6 +26,12 @@ class ConsumiblesController extends Controller {
 		return view('vistaProductos',compact("produc","cate"));
 	}
 
+	public function anadircart($id){
+		$cart=Producto::carrito($id);
+		Cart::add('{{$cart->nombre_producto}}',1,'{{$cart->precio}}');
+		 \Redirect::back();
+	}
+
 	public function categorias($id){
 		
 	}

@@ -14,4 +14,8 @@ class Producto extends Model
     public static function allproductos(){
        return self::select('id','nombre_producto','precio','disponible')->get();
     }   
+
+    public static function carrito($id){
+    	return self::find($id);
+    }
 }

@@ -27,4 +27,6 @@ Route::get('proyecto-final/public/Ubicacion', function ()
     return view('vistaUbicacion');
 });
 
-Route::get('productos', 'ConsumiblesController@productos');
+Route::get('proyecto-final/public/productos', 'ConsumiblesController@productos');
+
+Route::get('anadir/{id}', 'Consumibles@anadircart');
