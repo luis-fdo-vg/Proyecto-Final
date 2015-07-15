@@ -16,7 +16,6 @@ Route::get('/', function ()
     return view('welcome');
 });
 
-R
 
 Route::get('proyecto-final/public/Inicio', function () 
 {

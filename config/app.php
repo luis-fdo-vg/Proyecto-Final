@@ -144,6 +144,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
+        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
         'Barryvdh\DomPDF\ServiceProvider',
 
     ],
@@ -160,7 +161,6 @@ return [
     */
 
     'aliases' => [
-
 
         'App'       => Illuminate\Support\Facades\App::class,
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,
@@ -195,6 +195,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
         'PDF' => 'Barryvdh\DomPDF\Facade',
+        'Cart'            => 'Gloudemans\Shoppingcart\Facades\Cart',
 
     ],
 

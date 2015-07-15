@@ -12,6 +12,6 @@ class Producto extends Model
 {
     protected $table = 'productos';
     public static function allproductos(){
-       return self::select('id_producto','nombre_producto','precio','disponible')->get();
+       return self::select('id','nombre_producto','precio','disponible')->get();
     }   
 }
