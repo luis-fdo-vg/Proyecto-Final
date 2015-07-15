@@ -1,3 +1,0 @@
-@extends("welcome")
-
-@section("contactar")
