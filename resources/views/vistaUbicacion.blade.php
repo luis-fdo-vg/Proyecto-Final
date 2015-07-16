@@ -54,5 +54,5 @@
 			<p align="center">Blvd. Doctor Mora #1218 A-2 Col. Las Quintas C.P. 80060</p>
 		</div>
 		</div>
-		</div>
+		
 @stop

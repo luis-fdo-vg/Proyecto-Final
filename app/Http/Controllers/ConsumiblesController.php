@@ -5,6 +5,7 @@ use DB;
 use App\Http\Controllers\Controller;
 use App\Producto;
 use App\Categoria;
+use App\Catepro;
 
 class ConsumiblesController extends Controller {
 
@@ -34,11 +35,14 @@ class ConsumiblesController extends Controller {
 
 	public function anadirventa($id){
 		DB::insert('insert into ventas (id_producto, num_compras) values (?, ?)', [$id, 1]);
-		\Redirect::back();
+		\Redirect::to("/productos");
 
 	}
 
 	public function categorias($id){
+		$cate=Categoria::allcategoria();
+		$produc=Catepro::catepro($id);
+		return view('vistaProductos',compact("produc","cate"));
 		
 	}
 

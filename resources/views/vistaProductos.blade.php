@@ -8,7 +8,7 @@
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categorias<span class="caret"></span></a>
           <ul class="dropdown-menu">
           	@foreach($cate as $cat)
-            <li><a href="#">{{$cat->nombre_categoria}}</a></li>
+            <li><a href="categoria/{{$cat->id}}">{{$cat->nombre_categoria}}</a></li>
             @endforeach
           </ul>
         </li>
@@ -19,22 +19,22 @@
 </nav>
 
 
-<div class="container" aling="right">         
-  <table class="table table-hover">
+<div class="container">         
+  <table class="table table-hover" aling="right">
     <thead>
       <tr>
-        <th>Produto</th>
-        <th>Precio</th>
-        <th>Disponibles</th>
+        <th aling="right">Produto</th>
+        <th aling="right">Precio</th>
+        <th aling="right">Disponibles</th>
       </tr>
     </thead>
     <tbody>
       @foreach($produc as $produ)
       <tr>
-        <td>{{$produ->nombre_producto}}</td>
-        <td>$ {{$produ->precio}}</td>
-        <td>{{$produ->disponible}}</td>
-        <td><a href="ananir/{{$produ->id}}"><button type="submit">Añadir</button></a></td>
+        <td aling="right">{{$produ->nombre_producto}}</td>
+        <td aling="right">$ {{$produ->precio}}</td>
+        <td aling="right">{{$produ->disponible}}</td>
+        <td aling="right"><a href="ananir/{{$produ->id}}"><button type="submit">Añadir</button></a></td>
       </tr>
       @endforeach
     </tbody>
