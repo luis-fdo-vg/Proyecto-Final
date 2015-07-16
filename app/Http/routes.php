@@ -13,16 +13,21 @@
 
 Route::get('/', function () 
 {
-    return view('welcome');
+    return view('vistaBienvenido');
 });
 
 
 Route::get('proyecto-final/public/Inicio', function () 
 {
-    return view('welcome');
+    return view('vistaBienvenido');
 });
 
 Route::get('proyecto-final/public/Ubicacion', function () 
+{
+    return view('vistaUbicacion');
+});
+
+Route::get('proyecto-final/public/publicacion', function () 
 {
     return view('vistaUbicacion');
 });

@@ -35,7 +35,9 @@ class ConsumiblesController extends Controller {
 
 	public function anadirventa($id){
 		DB::insert('insert into ventas (id_producto, num_compras) values (?, ?)', [$id, 1]);
-		\Redirect::to("/productos");
+		$cate=Categoria::allcategoria();
+		$produc=Producto::allproductos();
+		return view('vistaProductos',compact("produc","cate"));
 
 	}
 

@@ -26,8 +26,11 @@
        <div align="center">@yield("mapagoogle")</div> 
        <div align="center">@yield("registrar")</div>
        <div align="center">@yield("acceder")</div>
-       <div align="center">@yield("products")</div>
+       <div align="right">@yield("products")</div>
+       <div aling="center">@yield("bienvenido")</div>
+       <div aling="center">@yield("publicacion")</div>
 
+       
         <!-- Sidebar -->
             <div id="sidebar">
 
@@ -39,9 +42,9 @@
                         <ul>
                             <li><a href="Inicio">Inicio</a></li>
                             
-                            <li><a href="productos">Productos</a></li>
+                            <li><a href="{{url('proyecto-final/public/productos')}}">Productos</a></li>
                             <li><a href="Ubicacion">Ubicacion</a></li>
-                            <li><a href="#">Publicaciones</a></li>
+                            <li><a href="{{url('proyecto-final/public/publicacion')}}">Publicaciones</a></li>
                            
                         </ul>
                     </nav>
