@@ -29,4 +29,6 @@ Route::get('proyecto-final/public/Ubicacion', function ()
 
 Route::get('proyecto-final/public/productos', 'ConsumiblesController@productos');
 
-Route::get('anadir/{id}', 'Consumibles@anadircart');
+Route::get('proyecto-final/public/ananir/{id}', 'ConsumiblesController@anadirventa');
+
+Route::get('Cotizar', 'PdfController@Cotizar');

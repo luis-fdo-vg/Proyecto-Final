@@ -5,25 +5,22 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use DB;
-use App\Grupos;
-use App\Materia;
-use App\Alumno;
+use App\Producto;
+use App\Venta;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class PdfController extends Controller
 {
-   public function elPdf($id){
+   public function Cotizar(){
 
-        $grupos = Grupos::Grupos($id);
-        $mates=Materia::todamateria();
-        $alems=Alumno::Alumbrado($id);
+        $buy=Venta::venta();
 
         $date = date('Y-m-d');
-        $view =  \View::make('elPdf', compact("grupos", "mates", "alems", "date"))->render();
+        $view =  \View::make('vistaCotizar', compact("buy", "date"))->render();
         $pdf = \App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
-        return $pdf->stream('elPdf');
+        return $pdf->stream('vistaCotizar');
     }
 
 }

@@ -12,22 +12,34 @@
             @endforeach
           </ul>
         </li>
+        <li><a href="Cotizar">Cotizar</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 
-	<div id="pricing-table" class="clear">
-@foreach($produc as $produ)
-    <div class="plan">
-        <h3>{{$produ->nombre_producto}}<span>$ {{$produ->precio}}</span></h3>
-        <a class="signup" href="ananir/{{$produ->id}}">Añadir</a>         
-        <ul>
-            <li><b>{{$produ->disponible}}</b> Disponibles</li>			
-        </ul> 
-    </div>
+<div class="container" aling="right">         
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Precio</th>
+        <th>Disponibles</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach($produc as $produ)
+      <tr>
+        <td>{{$produ->nombre_producto}}</td>
+        <td>$ {{$produ->precio}}</td>
+        <td>{{$produ->disponible}}</td>
+        <td><a href="ananir/{{$produ->id}}"><button type="submit">Añadir</button></a></td>
+      </tr>
+      @endforeach
+    </tbody>
+  </table>
 </div>
-@endforeach
+
 
 @stop
