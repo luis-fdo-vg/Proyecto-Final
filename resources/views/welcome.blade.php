@@ -43,6 +43,9 @@
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
         </div>
+            <footer class="row" aling="right">
+            @include('footer')
+            </footer>
         </div>
     </body>
 </html>

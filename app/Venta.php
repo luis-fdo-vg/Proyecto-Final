@@ -13,7 +13,7 @@ class Venta extends Model
     protected $table = 'ventas';
     public static function venta(){
        return self::join('productos','productos.id','=','ventas.id_producto')
-       				->select('id_ventas','productos.nombre_producto','ventas.num_compras','productos.precio')
+       				->select('id_ventas','productos.nombre_producto','ventas.num_compras','productos.precio','id_producto')
        				->get();
     }   
 }

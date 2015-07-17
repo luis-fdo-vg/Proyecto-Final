@@ -11,26 +11,15 @@
 |
 */
 
-Route::get('/', function () 
-{
-    return view('vistaBienvenido');
-});
+Route::get('/', 'ConsumiblesController@index');
 
 
-Route::get('proyecto-final/public/Inicio', function () 
-{
-    return view('vistaBienvenido');
-});
 
-Route::get('proyecto-final/public/Ubicacion', function () 
-{
-    return view('vistaUbicacion');
-});
+Route::get('proyecto-final/public/Inicio', 'ConsumiblesController@index');
 
-Route::get('proyecto-final/public/publicacion', function () 
-{
-    return view('vistaPublicacion');
-});
+Route::get('proyecto-final/public/Ubicacion', 'ConsumiblesController@mapa');
+
+Route::get('proyecto-final/public/publicacion', 'ConsumiblesController@publicacion');
 
 Route::get('proyecto-final/public/productos', 'ConsumiblesController@productos');
 
@@ -39,3 +28,5 @@ Route::get('proyecto-final/public/ananir/{id}', 'ConsumiblesController@anadirven
 Route::get('proyecto-final/public/Cotizar', 'PdfController@Cotizar');
 
 Route::get('proyecto-final/public/categoria/{id}','ConsumiblesController@categorias');
+
+Route::get('proyecto-final/public/borrar/{id}/{idpro}','ConsumiblesController@borrar');
