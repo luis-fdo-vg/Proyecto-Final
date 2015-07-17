@@ -23,71 +23,26 @@
 
     </head>
     <body>
-       <div align="center">@yield("mapagoogle")</div> 
-       <div align="center">@yield("registrar")</div>
-       <div align="center">@yield("acceder")</div>
-       <div align="right">@yield("products")</div>
-       <div aling="center">@yield("bienvenido")</div>
-       <div aling="center">@yield("publicacion")</div>
-
+       <div class="container">
+          <div id="main" class="row">
+            <div id="content" class="col-md-8">
+                <div align="left">@yield("mapagoogle")</div> 
+                <div align="left">@yield("registrar")</div>
+                <div align="left">@yield("acceder")</div>
+                <div align="left">@yield("products")</div>
+                <div aling="left">@yield("bienvenido")</div>
+                <div aling="left">@yield("publicacion")</div>
+            </div>
        
         <!-- Sidebar -->
-            <div id="sidebar">
-
-                <!-- Logo -->
-                    <h1><a href="Inicio"><img src="logo.jpg"></img></a></h1>
-
-                <!-- Nav Barra -->
-                    <nav id="nav">
-                        <ul>
-                            <li><a href="Inicio">Inicio</a></li>
-                            
-                            <li><a href="{{url('proyecto-final/public/productos')}}">Productos</a></li>
-                            <li><a href="Ubicacion">Ubicacion</a></li>
-                            <li><a href="{{url('proyecto-final/public/publicacion')}}">Publicaciones</a></li>
-                           
-                        </ul>
-                    </nav>
-                    <section class="box search">
-                        <form method="post" action="#">
-                            <input type="text" class="text" name="search" placeholder="Buscar" />
-                        </form>
-                    </section>
-
-                     <section class="box text-style1">
-                        <a href="auth/register">Registrarse</a>
-                         <div>
-                               <a href="auth/login"><button type="submit">Acceder</button></a>
-                          </div>
-                        
-                    </section>
-
-                    <section class="box text-style1">
-                        <div class="inner">
-                            <p>
-                                <strong>CONTACTO@</strong> <br/>   
-                                tel: 7-89-65-45<br/>
-                                cel: 71-69-58-47<br/>
-                                e-mail: edgarjoto@p.com<br/>
-
-                            </p>    
-                    </section>   
-
-
-
-                   
-
-
-                    <ul id="copyright">
-                        <li>&copy; Alumnos Tec.</li>
-                    </ul>
-
-            </div>
-
+        <div id="sidebar" class="col-md-4">
+            @include('sidebar')
+        </div>
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/skel.min.js"></script>
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
-
+        </div>
+        </div>
     </body>
 </html>

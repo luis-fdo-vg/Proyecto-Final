@@ -8,11 +8,11 @@
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categorias<span class="caret"></span></a>
           <ul class="dropdown-menu">
           	@foreach($cate as $cat)
-            <li><a href="categoria/{{$cat->id}}">{{$cat->nombre_categoria}}</a></li>
+            <li><a href="{{url('proyecto-final/public/categoria')}}/{{$cat->id}}">{{$cat->nombre_categoria}}</a></li>
             @endforeach
           </ul>
         </li>
-        <li><a href="Cotizar">Cotizar</a></li>
+        <li><a href="{{url('proyecto-final/public/Cotizar')}}">Cotizar</a></li>
       </ul>
     </div>
   </div>
@@ -21,22 +21,23 @@
 
 <div class="container"> 
   <div class="row">
-    <div class="col-xs-12 text-right">        
-  <table class="table table-hover" aling="right">
+    <div class="col-xs-12 text-left">        
+  <table class="table table-hover" aling="left">
     <thead>
       <tr>
-        <th aling="right">Produto</th>
-        <th aling="right">Precio</th>
-        <th aling="right">Disponibles</th>
+        <th aling="center">Produto</th>
+        <th aling="center">Precio</th>
+        <th aling="center">Disponibles</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       @foreach($produc as $produ)
       <tr>
-        <td aling="right">{{$produ->nombre_producto}}</td>
-        <td aling="right">$ {{$produ->precio}}</td>
-        <td aling="right">{{$produ->disponible}}</td>
-        <td aling="right"><a href="ananir/{{$produ->id}}"><button type="submit">Añadir</button></a></td>
+        <td aling="left">{{$produ->nombre_producto}}</td>
+        <td aling="left">$ {{$produ->precio}}</td>
+        <td aling="left">{{$produ->disponible}}</td>
+        <td aling="left"><a href="{{url('proyecto-final/public/ananir')}}/{{$produ->id}}"><button type="submit">Añadir</button></a></td>
       </tr>
       @endforeach
     </tbody>

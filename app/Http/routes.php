@@ -29,7 +29,7 @@ Route::get('proyecto-final/public/Ubicacion', function ()
 
 Route::get('proyecto-final/public/publicacion', function () 
 {
-    return view('vistaUbicacion');
+    return view('vistaPublicacion');
 });
 
 Route::get('proyecto-final/public/productos', 'ConsumiblesController@productos');
